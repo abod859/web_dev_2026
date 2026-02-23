@@ -1,8 +1,8 @@
 
 body {
-  background-color: #ffffff;
+  background-color: #0286f1;
   color: #121722;
-  font-size: 1rem; 
+  font-size: 60rem; 
 }
 
 h1 {
@@ -21,13 +21,13 @@ p {
 
 
 nav a {
-  color: #0f766e;
+  color: #ffffff;
 }
 
 
 
 nav > ul {
-  background-color: #3d76da;
+  background-color: #ffffff;
 }
 
 
@@ -45,5 +45,5 @@ nav > ul {
 
 footer {
   background-color: #796862;
-  color: #11111199;
+  color: #ffffff99;
 }
