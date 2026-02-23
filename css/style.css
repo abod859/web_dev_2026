@@ -1,0 +1,48 @@
+
+body {
+  background-color: #f4f6f9;
+  color: #1f2937;
+  font-size: 1rem; 
+}
+
+h1 {
+  color: #0f172a;
+}
+
+h2 {
+  color: #1d4ed8;
+}
+
+p {
+  color: #334155;
+}
+
+
+
+nav a {
+  color: #0f766e;
+}
+
+
+
+nav > ul {
+  background-color: #ffffff;
+}
+
+
+
+.highlight {
+  background-color: #fff7ed;
+  color: #7c2d12;
+}
+
+
+
+#site-title {
+  color: #7c3aed;
+}
+
+footer {
+  background-color: #e5e7eb;
+  color: #374151;
+}
