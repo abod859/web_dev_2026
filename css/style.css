@@ -7,6 +7,7 @@ body {
 
 h1 {
   color: #0f172a;
+  font: 1em sans-serif;
 }
 
 h2 {
@@ -43,6 +44,6 @@ nav > ul {
 }
 
 footer {
-  background-color: #81d7ff;
-  color: #0f766e;
+  background-color: #ffa081;
+  color: #ffa08199;
 }
