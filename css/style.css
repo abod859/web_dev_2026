@@ -21,8 +21,7 @@ p {
 }
 
 
-
-nav a {
+nav a:hover{
   color: #a84f25;
 }
 
@@ -38,8 +37,6 @@ nav > ul {
   background-color: #ffffff;
   color: #7c2d12;
 }
-
-
 
 #site-title {
   color: #7e2e2e;
