@@ -1,12 +1,12 @@
 
 body {
   background-color: #e4e4e4fd;
-  color: #0b101a;
+  color: #202630;
   font-size: 1rem; 
 }
 
 h1 {
-  color: #003ece;
+  color: #031d91;
   font-size: 2.5rem;
   font-weight: bold;
   font-family: sans-serif;
@@ -17,32 +17,32 @@ h2 {
 }
 
 p {
-  color: #000d1f;
+  color: #008120;
 }
 
 
 
 nav a {
-  color: #aeccf7;
+  color: #a84f25;
 }
 
 
 
 nav > ul {
-  background-color: #0000007c;
+  background-color: #e4e4e4fd;
 }
 
 
 
 .highlight {
-  background-color: #fff7ed;
+  background-color: #ffffff;
   color: #7c2d12;
 }
 
 
 
 #site-title {
-  color: #7c3aed;
+  color: #7e2e2e;
 }
 
 footer {
