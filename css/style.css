@@ -67,13 +67,7 @@ main {
   background-color: #ffffff;
 }
 
-img {
-  width: 80%;
-  max-width: 481px;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-}
+
 
 /* Section boxes
 */
@@ -84,6 +78,19 @@ section {
   margin: 1rem 0;
 }
 
+figure {
+  margin: 1rem 0;
+}
+
+picture {
+  display: block;
+}
+img {
+  max-width: 481px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
 
 /* Paragraph spacing example
 */
