@@ -1,4 +1,6 @@
 
+
+
 body {
   background-color: #e4e4e4fd;
   color: #202630;
@@ -9,26 +11,32 @@ h1 {
   color: #031d91;
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem 0;
 }
 
 h2 {
   color: #0746f3ce;
 }
 
-p {
-  color: #008120;
-}
+
 
 
 nav a:hover{
   color: #a84f25;
+
 }
 
 
 
 nav > ul {
   background-color: #e4e4e4fd;
+  list-style-type: none;
+  text-align: center;
+}
+nav > ul > li {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 
@@ -42,7 +50,78 @@ nav > ul {
   color: #7e2e2e;
 }
 
+
+
+/*
+* {
+  border: 1px solid black;
+}
+*/
+
+
+main {
+  width: 85%;
+  margin: 0 auto;
+  border: 2px solid #202630;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+
+/* Section boxes
+*/
+
+section {
+  border: 2px solid #7e2e2e;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+
+/* Paragraph spacing example
+*/
+
+p {
+  border: 1px solid #cfcfcf;
+  padding: 0.75rem;
+  margin: 0.75rem 0;
+  color: #008120;
+
+}
+
+
+
+.nested-demo {
+  border: 2px solid #0746f3ce;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f9fafb;
+}
+
+
+.child-default {
+  width: 100%;
+  padding: 1rem;
+  border: 2px dashed #008120;
+}
+
+
+/* Using border-box */
+
+.child-borderbox {
+  width: 100%;
+  padding: 1rem;
+  border: 2px dashed #031d91;
+  box-sizing: border-box;
+}
+
+
+
+/* Footer styling */
 footer {
   background-color: #0803038c;
   color: #ffffff99;
+  text-align: center;
+  margin: 2rem 0 0 0;
+  padding: 1rem;
 }
