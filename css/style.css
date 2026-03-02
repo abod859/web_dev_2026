@@ -68,7 +68,8 @@ main {
 }
 
 img {
-  max-width: 480px; ;
+  width: 80%;
+  max-width: 481px;
   height: auto;
   display: block;
   margin: 1rem auto;
