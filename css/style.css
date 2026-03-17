@@ -5,10 +5,14 @@ html {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 body {
-  background-color: #e4e4e4fd;
+  background: linear-gradient(135deg, #cacccf, #7292d3ec);
   color: #202630;
+  padding: 1rem 2rem;
   font-size: 1rem; 
 }
+
+
+
 h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -42,7 +46,7 @@ p {
   border: 1px solid #cfcfcf;
   padding: 0.75rem;
   margin: 0.75rem 0;
-  color: #008120;
+  color: #2b6e3c;
   line-height: 1.5;
 
 }
@@ -56,9 +60,10 @@ nav a:hover{
 
 
 nav > ul {
-  background-color: #e4e4e4fd;
   list-style-type: none;
   text-align: center;
+  background: none;
+
 
 }
 nav > ul > li {
@@ -66,6 +71,16 @@ nav > ul > li {
   margin-right: 1rem;
 }
 
+/* List styling experiment */
+
+ul {
+  list-style-type: circle;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
 
 
 .highlight {
@@ -106,7 +121,7 @@ section {
 }
 
 figure {
-  margin: 1rem 0;
+  padding: 0.5rem;
 }
 
 picture {
@@ -117,7 +132,13 @@ img {
   height: auto;
   display: block;
   margin: 1rem auto;
+  border: 5px dotted #5c5b5bf3;
+  border-radius: 20px;
+
 }
+
+
+
 
 
 
@@ -149,9 +170,11 @@ img {
 
 /* Footer styling */
 footer {
-  background-color: #0803038c;
-  color: #ffffff99;
+  background: linear-gradient(135deg, #1a1a2e00, #09205fd2);
+  color: #ffffff;
   text-align: center;
   margin: 2rem 0 0 0;
   padding: 1rem;
+  
 }
+
