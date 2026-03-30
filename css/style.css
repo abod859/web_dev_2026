@@ -111,6 +111,23 @@ main {
   background-color: #ffffff;
 }
 
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.about-flex > header {
+  width: 100%;
+  text-align: center;
+  color: #0746f3ce;
+}
+
+.about-flex > section {
+  flex: 1 1 18rem;
+}
+
+
 
 
 /* Section boxes
