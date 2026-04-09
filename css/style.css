@@ -1,9 +1,13 @@
 
-
+/* Global styles
+*/
 html {
   font-size: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/* Body styling with gradient background and padding
+*/
 body {
   background: linear-gradient(135deg, #cacccf, #7292d3ec);
   color: #202630;
@@ -12,7 +16,8 @@ body {
 }
 
 
-
+/* Heading styles with different colors and font sizes
+*/
 h1, h2, h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,17 +62,19 @@ nav a:hover{
 }
 
 
-
 nav > ul {
   list-style-type: none;
   text-align: center;
   background: none;
   display: flex;
   flex-wrap: wrap;
-  justify-self: center;
+  justify-content: center;
   gap: 1rem;  
 
 }
+
+/* Displaying navigation items inline with spacing
+*/
 nav > ul > li {
   display: inline-block;
   margin-right: 0;
@@ -84,7 +91,8 @@ ul li {
   margin-bottom: 1rem;
 }
 
-
+/* Highlight class for special text styling
+*/
 .highlight {
   background-color: #ffffff;
   color: #7c2d12;
@@ -102,7 +110,8 @@ ul li {
 }
 */
 
-
+/* Main content styling with centered layout and borders
+*/
 main {
   width: 85%;
   margin: 0 auto;
@@ -111,6 +120,8 @@ main {
   background-color: #ffffff;
 }
 
+/* About section with flexbox layout and responsive design
+*/
 .about-flex {
   display: flex;
   flex-wrap: wrap;
@@ -139,6 +150,8 @@ section {
   margin: 1rem 0;
 }
 
+/* Figure and image styling with borders and responsive design
+*/
 figure {
   padding: 0.5rem;
 }
@@ -157,10 +170,8 @@ img {
 }
 
 
-
-
-
-
+/* Nested demo section with flexbox layout and different border styles
+*/
 .nested-demo {
   border: 2px solid #0746f3ce;
   padding: 1rem;
@@ -181,6 +192,9 @@ img {
   flex: 1 1 18rem;
 }
 
+
+/* Default box model with content-box
+*/
 .child-default {
   width: 100%;
   padding: 1rem;
