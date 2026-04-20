@@ -9,7 +9,7 @@ html {
 /* Body styling with gradient background and padding
 */
 body {
-  background: linear-gradient(135deg, #cacccf, #7292d3ec);
+  background: linear-gradient(100deg, #f5efe6, #4A2c2a);
   color: #202630;
   padding: 1rem 2rem;
   font-size: 1rem; 
@@ -117,7 +117,7 @@ main {
   margin: 0 auto;
   border: 2px solid #202630;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: #f5efe6;
 }
 
 /* About section with flexbox layout and responsive design
@@ -148,6 +148,7 @@ section {
   border: 2px solid #7e2e2e;
   padding: 1rem;
   margin: 1rem 0;
+  background-color: #f5efe6;
 }
 
 /* Figure and image styling with borders and responsive design
@@ -176,7 +177,7 @@ img {
   border: 2px solid #0746f3ce;
   padding: 1rem;
   margin: 1rem 0;
-  background-color: #f9fafb;
+  background-color: #f5efe6;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
