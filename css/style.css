@@ -1,226 +1,331 @@
+/* Modern personal website design */
+:root {
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --surface-soft: #eef7f6;
+  --text: #17202a;
+  --muted: #5d6b78;
+  --primary: #155e75;
+  --primary-dark: #0f3f4f;
+  --accent: #e86f51;
+  --line: #dce5ec;
+  --shadow: 0 18px 45px rgba(23, 32, 42, 0.1);
+  --radius: 8px;
+}
 
-/* Global styles
-*/
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 100%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-/* Body styling with gradient background and padding
-*/
 body {
-  background: linear-gradient(100deg, #f5efe6, #4A2c2a);
-  color: #202630;
-  padding: 1rem 2rem;
-  font-size: 1rem; 
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(21, 94, 117, 0.08), rgba(232, 111, 81, 0.08)),
+    var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
+body > header {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 1.5rem 2.25rem;
+  color: #ffffff;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(15, 63, 79, 0.96), rgba(21, 94, 117, 0.92)),
+    url("../media/calligraphy_large.jpg") center / cover;
+}
 
-/* Heading styles with different colors and font sizes
-*/
-h1, h2, h3 {
-  font-family: Arial, Helvetica, sans-serif;
+body > header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 24, 32, 0.35);
+}
+
+body > header > * {
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.2;
 }
 
 h1 {
-  color: #031d91;
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem 0;
-  letter-spacing: 0.05em;
-  
+  max-width: 48rem;
+  margin: 0 auto 1.5rem;
+  color: #ffffff;
+  font-size: 2.6rem;
+  font-weight: 800;
 }
 
 h2 {
-  color: #0746f3ce;
-  font-size: 1.75rem;
-  font-weight: bold;
+  color: var(--primary-dark);
+  font-size: 1.7rem;
+  font-weight: 750;
 }
 
 h3 {
-  color: #000000;
-  font-size: 1.25rem;
-  font-weight: bold;
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 700;
 }
-
-/* Paragraph spacing example
-*/
-
-p {
-  padding: 0.75rem;
-  margin: 0.75rem 0;
-  color: #2b6e3c;
-  line-height: 1.5;
-
-}
-
-
-nav a:hover{
-  color: #a84f25;
-  text-decoration: underline;
-}
-
 
 nav > ul {
-  list-style-type: none;
-  text-align: center;
-  background: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;  
-
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-/* Displaying navigation items inline with spacing
-*/
-nav > ul > li {
-  display: inline-block;
-  margin-right: 0;
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
 }
 
-/* List styling experiment */
-
-ul {
-  list-style-type: circle;
-  padding-left: 1.5rem;
+nav a:hover,
+nav a:focus-visible {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transform: translateY(-2px);
 }
 
-ul li {
+main {
+  width: min(1120px, calc(100% - 2rem));
+  margin: -1.25rem auto 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+
+article {
+  padding: 1.25rem;
+}
+
+article > header {
   margin-bottom: 1rem;
 }
 
-/* Highlight class for special text styling
-*/
+section {
+  margin: 1rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+article:first-child section:first-of-type {
+  border-color: rgba(21, 94, 117, 0.25);
+  background: linear-gradient(135deg, #ffffff, var(--surface-soft));
+}
+
+p {
+  max-width: 72ch;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  color: var(--muted);
+}
+
+strong,
+em,
+i {
+  color: var(--primary-dark);
+}
+
+ul {
+  margin: 0.9rem 0 0;
+  padding-left: 1.25rem;
+}
+
+ul li {
+  margin-bottom: 0.65rem;
+  color: var(--muted);
+}
+
+main ul li::marker {
+  color: var(--accent);
+}
+
+hr {
+  width: min(1120px, calc(100% - 2rem));
+  height: 1px;
+  margin: 1.5rem auto;
+  border: 0;
+  background: var(--line);
+}
+
 .highlight {
-  background-color: #ffffff;
-  color: #7c2d12;
+  border-radius: 0.35rem;
+  color: var(--primary-dark);
+  background-color: #fff3ed;
 }
 
 #site-title {
-  color: #7e2e2e;
+  color: var(--primary-dark);
 }
 
-
-
-/*
-* {
-  border: 1px solid black;
-}
-*/
-
-/* Main content styling with centered layout and borders
-*/
-main {
-  width: 85%;
-  margin: 0 auto;
-  border: 2px solid #202630;
-  padding: 1rem;
-  background-color: #f5efe6;
-}
-
-/* About section with flexbox layout and responsive design
-*/
-.about-flex {
-  display: flex;
-  flex-wrap: wrap;
+.about-flex,
+.nested-demo {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  margin: 0;
+  padding: 1.25rem;
+  border: 0;
+  background: transparent;
 }
 
-.about-flex > header {
+.about-flex > header,
+.nested-demo > header {
+  grid-column: 1 / -1;
+  text-align: left;
+}
+
+.about-flex > section,
+.nested-demo > section {
+  margin: 0;
+}
+
+.nested-demo > section {
+  background: #fbfcfd;
+}
+
+.child-default,
+.child-borderbox {
   width: 100%;
-  text-align: center;
-  color: #0746f3ce;
-}
-
-.about-flex > section {
-  flex: 1 1 18rem;
-}
-
-
-
-
-/* Section boxes
-*/
-
-section {
-  border: 2px solid #7e2e2e;
+  margin-top: 0.75rem;
   padding: 1rem;
-  margin: 1rem 0;
-  background-color: #f5efe6;
+  border-radius: var(--radius);
+  color: var(--text);
+  background: #ffffff;
 }
 
-/* Figure and image styling with borders and responsive design
-*/
+.child-default {
+  border: 1px dashed var(--accent);
+}
+
+.child-borderbox {
+  border: 1px dashed var(--primary);
+  box-sizing: border-box;
+}
+
 figure {
-  padding: 0.5rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
 }
 
 picture {
   display: block;
 }
+
 img {
-  max-width: 481px;
-  height: auto;
   display: block;
+  width: min(100%, 481px);
+  height: auto;
   margin: 1rem auto;
-  border: 5px dotted #5c5b5bf3;
-  border-radius: 20px;
-
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: 0 14px 35px rgba(23, 32, 42, 0.14);
 }
 
-
-/* Nested demo section with flexbox layout and different border styles
-*/
-.nested-demo {
-  border: 2px solid #0746f3ce;
-  padding: 1rem;
-  margin: 1rem 0;
-  background-color: #f5efe6;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.nested-demo > header {
-  width: 100%;
+figcaption {
+  color: var(--muted);
+  font-size: 0.95rem;
   text-align: center;
-  color: #0746f3ce;
 }
 
-.nested-demo > section {
-  flex: 1 1 18rem;
-}
-
-
-/* Default box model with content-box
-*/
-.child-default {
-  width: 100%;
-  padding: 1rem;
-  border: 2px dashed #008120;
-}
-
-
-/* Using border-box */
-
-.child-borderbox {
-  width: 100%;
-  padding: 1rem;
-  border: 2px dashed #031d91;
-  box-sizing: border-box;
-}
-
-
-
-/* Footer styling */
 footer {
-  background: linear-gradient(135deg, #1a1a2e00, #09205fd2);
+  width: min(1120px, calc(100% - 2rem));
+  margin: 1.5rem auto 2rem;
+  padding: 1.1rem;
+  border-radius: var(--radius);
   color: #ffffff;
   text-align: center;
-  margin: 2rem 0 0 0;
-  padding: 1rem;
-  
+  background: var(--primary-dark);
 }
 
+address {
+  font-style: normal;
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  main {
+    padding: 0.75rem;
+  }
+
+  article,
+  section,
+  .about-flex,
+  .nested-demo {
+    padding: 1rem;
+  }
+
+  .about-flex,
+  .nested-demo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  body > header {
+    padding: 2.25rem 1rem 1.75rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  nav > ul {
+    gap: 0.5rem;
+  }
+
+  nav a {
+    min-height: 2.5rem;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  main,
+  hr,
+  footer {
+    width: min(100% - 1rem, 1120px);
+  }
+}
