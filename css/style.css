@@ -27,8 +27,8 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    linear-gradient(135deg, rgba(21, 94, 117, 0.08), rgba(232, 111, 81, 0.08)),
-    var(--bg);
+    linear-gradient(135deg, rgba(15, 63, 79, 0.78), rgba(21, 94, 117, 0.72)),
+    url("../media/calligraphy_large.jpg") center / cover fixed;
   color: var(--text);
   font-size: 1rem;
   line-height: 1.7;
